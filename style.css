@@ -35,6 +35,22 @@ body{
     margin-left: 15px;
 }
 
+.h3-main-2{
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.h3-main-3{
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
 .h4-main{
     font-family: 'Chelsea Market', cursive;
 }
@@ -117,6 +133,15 @@ body{
 
 .game-over{
     color: red;
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.voce-venceu{
+    color: green;
     display: flex;
     font-family: 'Chelsea Market', cursive;
     font-size: 50px;

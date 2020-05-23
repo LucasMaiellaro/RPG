@@ -9,8 +9,8 @@ function typeWriter(elemento){
     })
 }
 
-// const texto = document.querySelector('.texto');
-// typeWriter(texto);
+const texto = document.querySelector('.texto');
+typeWriter(texto);
 
 let dinheiro = 100; 
 let pocoes = document.querySelector('.pocoes');
@@ -27,6 +27,7 @@ document.querySelector('.h2-main').style.display = 'none';
 document.querySelector('.vida').innerHTML = vida;
 document.querySelector('.troll').innerHTML = vidaTroll;
 document.querySelector('.game-over').style.display = 'none';
+document.querySelector('.voce-venceu').style.display = 'none';
 
 
 function compra(){
@@ -47,7 +48,7 @@ function mudarTexto(){
     document.querySelector('.input').style.visibility = 'hidden';
     document.querySelector('.botao-main').style.display= 'none';
     document.querySelector('.texto').innerHTML = novoTexto;
-    // typeWriter(texto);
+    typeWriter(texto);
     colocaNovosItens();
 }
 
@@ -59,6 +60,7 @@ function atacar(){
         document.querySelector('.troll').innerHTML = vidaTroll;
         alert('Você tirou 47 de vida do troll.');
         alert('Parabéns! Você venceu!');
+        setTimeout(voceVenceu, 2000);
     }
     else{
         alert('Você tirou 47 de vida do troll.');
@@ -86,9 +88,29 @@ function beberPocao(){
         document.querySelector('.botao-main-3').style.display = 'none';
     } 
     vida = vida + 130;
-    vida = vida - 29;
     if (vida >= 200){
         vida = 200;
+        vida = vida - 29;
+    }
+    else{
+        vida = vida - 29;
     }
     document.querySelector('.vida').innerHTML = vida;
+}
+
+function voceVenceu(){
+    document.querySelector('.botao-main-2').style.display = 'none';
+    document.querySelector('.botao-main-3').style.display = 'none';
+    document.querySelector('.troll').style.display = 'none';
+    document.querySelector('.h2-main').style.display = 'none';
+    document.querySelector('.h3-main').style.display = 'none';
+    document.querySelector('.h3-main-2').style.display = 'none';
+    document.querySelector('.h3-main-3').style.display = 'none';
+    document.querySelector('.hacksilvers').style.display = 'none';
+    document.querySelector('.pocoes').style.display = 'none';
+    document.querySelector('.vida').style.display = 'none';
+    document.querySelector('.voce-venceu').style.display = 'initial';
+    novoTexto = 'AAAAAAAAAAAAAAEEEEEEEEEEEEE CARAIOOOO! Tu ganhou mano aí sim em cara. Vamo terminar a história então. Você sobe a montanha e encontra a Pedra e então diz: "Desejo a queda dos Aesir". Então Freya, uma Deusa Vanir e primeira rainha das Valquírias aparece junto com todos os outros Deuses rivais de Odin. Vocês se encaminham a Asgard em busca de vingança enquanto Odin, Thor, Modi e Magni os aguardam para travar a segunda guerra entre os Deuses Nórdicos. Continua...';
+    document.querySelector('.texto').innerHTML = novoTexto;
+    typeWriter(texto);
 }
