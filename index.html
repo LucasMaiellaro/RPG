@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <title>RPG</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo">rpg do álvaro</h1>
+        <h2 class="titulo">esse é top em</h2>
+    </header>
+
+    <main>
+        <div class="div-main">
+            <p class="texto">
+                Bem-vindo ao RPG do Álvaro (acho que é só ele quem vai jogar isso). Então oi, Álvaro!
+                Vamos começar! Você é um bravo guerreiro que está em busca da Pedra Abençoada dos Vanir.
+                Essa pedra pode te conceder um desejo e os Deuses Vanir irão atendê-lo. Em seu mapa, 
+                a localização da Pedra está em cima de uma montanha no reino de Jotunheim, o reino dos Gigantes.
+                Odin acompanha sua caminhada, pois sabe que você planeja a queda dos Aesir, e que 
+                posteriormente, esse seria seu desejo para a Pedra. Os Deuses Vanir e Aesir estiveram em guerra 
+                há séculos atrás. Após Odin e sua turma dos Aesir vencerem a guerra a única esperança é o poder 
+                da Pedra Abençoada dos Vanir. Você acabou de entrar no reino de Jotunheim. Thor e Odin dizimaram 
+                todos os Gigantes que ali viviam. Os Vanir deixaram a Pedra no topo da montanha dos Gigantes em 
+                homenagem aos seus aliados na guerra. Você encontra uma loja! O lojista apenas vende poções de 
+                cura, cada uma custa 10 hacksilvers.
+            </p>
+        </div>
+
+        <div class="div-main">
+            <h3 class="h3-main">hacksilvers: </h3>
+            <p class="hacksilvers">0</p>
+            <h3 class="h3-main">Poções:</h3>
+            <p class="pocoes">0</p>
+        </div>
+
+        <div class="div-main">
+            <p class="h4-main">Quantas poções você deseja comprar?</p>
+            <input class="input" type="number" min="0" max="10">
+        </div>
+
+        <div class="div-main">
+            <button onclick="compra(); mudarTexto();" class="botao-main">comprar</button>
+        </div>
+    </main>
+
+</body>
+</html>
