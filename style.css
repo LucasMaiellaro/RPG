@@ -114,3 +114,12 @@ body{
     font-size: 20px;
     margin-left: 15px;
 }
+
+.game-over{
+    color: red;
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+}
