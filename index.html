@@ -21,7 +21,7 @@
                 Bem-vindo ao RPG do Álvaro (acho que é só ele quem vai jogar isso). Então oi, Álvaro!
                 Vamos começar! Você é um bravo guerreiro que está em busca da Pedra Abençoada dos Vanir.
                 Essa pedra pode te conceder um desejo e os Deuses Vanir irão atendê-lo. Em seu mapa, 
-                a localização da Pedra está em cima de uma montanha no reino de Jotunheim, o reino dos Gigantes.
+                a localização da Pedra está marcada em cima de uma montanha no reino de Jotunheim, o reino dos Gigantes.
                 Odin acompanha sua caminhada, pois sabe que você planeja a queda dos Aesir, e que 
                 posteriormente, esse seria seu desejo para a Pedra. Os Deuses Vanir e Aesir estiveram em guerra 
                 há séculos atrás. Após Odin e sua turma dos Aesir vencerem a guerra a única esperança é o poder 
@@ -37,6 +37,8 @@
             <p class="hacksilvers">0</p>
             <h3 class="h3-main">Poções:</h3>
             <p class="pocoes">0</p>
+            <h3 class="h3-main">Vida:</h3>
+            <p class="vida">200</p>
         </div>
 
         <div class="div-main">
@@ -45,7 +47,17 @@
         </div>
 
         <div class="div-main">
-            <button onclick="compra(); mudarTexto();" class="botao-main">comprar</button>
+            <div class="div-main-botao">
+                <button class="botao-main-2">atacar</button>
+                <button onclick="compra(); mudarTexto();" class="botao-main">comprar</button>
+                <button class="botao-main-3">beber poção</button>
+            </div>
+        </div>
+
+        <div class="div-main">
+            <h2 class="h2-main">troll</h2>
+            <p class="troll">0</p>
+
         </div>
     </main>
 
