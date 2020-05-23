@@ -56,6 +56,12 @@ body{
     margin-left: 15px;
 }
 
+.vida{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
 
 .botao-main{
     background-color: black;
@@ -67,3 +73,44 @@ body{
     text-transform: uppercase;
 }
 
+.div-main-botao{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 40%;
+}
+
+.botao-main-2{
+    background-color: black;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    text-transform: uppercase;
+}
+
+.botao-main-3{
+    background-color: black;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    text-transform: uppercase;
+}
+
+.h2-main{
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.troll{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    margin-left: 15px;
+}
