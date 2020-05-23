@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+}
+
+/* ======== HEADER ======== */
+
+.titulo{
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/* ======== MAIN ======== */
+
+.div-main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.texto{
+    font-family: 'Chelsea Market', cursive;
+    text-align: justify;
+    width: 800px;
+}
+
+
+.h3-main{
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.h4-main{
+    font-family: 'Chelsea Market', cursive;
+}
+
+.input{
+    height: 20px;
+}
+
+
+.hacksilvers{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.pocoes{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+.botao-main{
+    background-color: black;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    font-family: 'Chelsea Market', cursive;
+    text-transform: uppercase;
+}
+
