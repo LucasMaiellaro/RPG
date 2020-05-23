@@ -14,9 +14,10 @@ function typeWriter(elemento){
 
 let dinheiro = 100; 
 let pocoes = document.querySelector('.pocoes');
-let novoTexto = 'Você acha estranho aquele anão com vários equipamentos de ferreiro te vender apenas algumas poções, esses game designers estão cada vez mais preguiçosos. Então você continua sua jornada. Você está no pé da montanha. Odin preocupado com o seu sucesso, revive um Troll que estava morto ali mesmo, para que te impeça de chegar ao topo da montanha. Rapaz o bicho é grande! Ele tem 400 de vida. Boa sorte!';
+let novoTexto = 'Você acha estranho aquele anão com vários equipamentos de ferreiro te vender apenas algumas poções, esses game designers estão cada vez mais preguiçosos. Então você continua sua jornada. Você está no pé da montanha. Odin preocupado com o seu sucesso, revive um Troll que estava morto ali mesmo, para que te impeça de chegar ao topo da montanha. Rapaz o bicho é grande! Ele tem 400 de vida. Seu HP máximo é 200. Boa sorte!';
 let vida = 200;
 let vidaTroll = 400;
+let quantidadeDePocoes = document.querySelector('.input');
 
 document.querySelector('.hacksilvers').innerHTML = dinheiro;
 document.querySelector('.botao-main-2').style.display = 'none';
@@ -29,7 +30,6 @@ document.querySelector('.game-over').style.display = 'none';
 
 
 function compra(){
-    let quantidadeDePocoes = document.querySelector('.input');
     dinheiro = dinheiro - (quantidadeDePocoes.value * 10);
     document.querySelector('.hacksilvers').innerHTML = dinheiro;
     document.querySelector('.pocoes').innerHTML = quantidadeDePocoes.value;
@@ -62,10 +62,10 @@ function atacar(){
     }
     else{
         alert('Você tirou 47 de vida do troll.');
+        alert('O Troll te ataca e você perde 68 de vida!');
+        vida = vida - 68;
     }
-    vida = vida - 63;
     document.querySelector('.vida').innerHTML = vida;
-    alert('O Troll te ataca e você perde 63 de vida!');
     if (vida <= 0){
         vida = 0;
         document.querySelector('.vida').innerHTML = vida;
@@ -74,4 +74,21 @@ function atacar(){
         document.querySelector('.botao-main-3').style.display = 'none';
         document.querySelector('.game-over').style.display = 'initial';
     }
+}
+
+function beberPocao(){
+    quantidadeDePocoes.value = quantidadeDePocoes.value - 1;
+    document.querySelector('.pocoes').innerHTML = quantidadeDePocoes.value;
+    alert('Você bebe a poção e recupera 130 de vida');
+    alert('Porém o Troll te ataca enquanto enquanto você bebia e você perde 29 de vida');
+    if (quantidadeDePocoes.value <= 0){
+        alert('Suas poções acabaram.')
+        document.querySelector('.botao-main-3').style.display = 'none';
+    } 
+    vida = vida + 130;
+    vida = vida - 29;
+    if (vida >= 200){
+        vida = 200;
+    }
+    document.querySelector('.vida').innerHTML = vida;
 }
