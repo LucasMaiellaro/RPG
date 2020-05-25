@@ -4,7 +4,6 @@ function typeWriter(elemento){
     textoArray.forEach(function(letra, i){
         setTimeout(function(){
             elemento.innerHTML += letra;
-
         }, 75 * i)
     })
 }
@@ -44,8 +43,8 @@ function colocaNovosItens(){
 }
 
 function mudarTexto(){
-    document.querySelector('.h4-main').innerHTML = ' ';
-    document.querySelector('.input').style.visibility = 'hidden';
+    document.querySelector('.h4-main').style.display  = 'none';
+    document.querySelector('.input').style.display = 'none';
     document.querySelector('.botao-main').style.display= 'none';
     document.querySelector('.texto').innerHTML = novoTexto;
     typeWriter(texto);
